@@ -1,7 +1,7 @@
 <html>
 	<head> 
 		<meta charset="UTF-8"> 
-		<TITLE>Текстовый документ 1</title>
+		<TITLE>Текстовый документ 2</title>
 	</head>
 	<body>
 		<form action="3.php" method="GET">
@@ -11,7 +11,7 @@
 			}
 		?>">
 		<input type="text" name="arg2" value="<?php 
-			if(!empty($_GET['arg2'])) {
+			if (isset($_GET['arg2'])){
 				echo htmlspecialchars($_GET['arg2']);
 			} 
 		?>">
